@@ -1,23 +1,25 @@
 package com.BasesDeDatos.Proyecto.model.entidades.envios;
 
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 
 import java.util.Date;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
+@Entity
 public class Envio {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "envio_seq")
+    @SequenceGenerator(name = "envio_seq", sequenceName = "ENVIO_SEQ", allocationSize = 1)
+    private Integer idEnvio;
 
-    private Long idEnvio;
-
-    private Long idEstadoEnvio;
-    private Long idVendedor;
+    private Integer idEstadoEnvio;
+    private Integer idVendedor;
     private Date fechaEnvio;
     private Date fechaRecibido;
 }

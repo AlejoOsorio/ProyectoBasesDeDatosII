@@ -1,4 +1,5 @@
 package com.BasesDeDatos.Proyecto.model.entidades.ventas;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,9 +9,14 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class VentaClientes {
-    private Long idVentaClientes;          // Identificador único de la venta a clientes
-    private Long idDetalleVentaMunicion;   // Identificador del detalle de venta de munición
-    private Long idDetalleVentaArma;       // Identificador del detalle de venta de arma
-    private Date fechaVenta;                // Fecha en que se realizó la venta a clientes
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "venta_clientes_seq")
+    @SequenceGenerator(name = "venta_clientes_seq", sequenceName = "VENTA_CLIENTES_SEQ", allocationSize = 1)
+    private Integer idVentaClientes;
+
+    private Integer idDetalleVentaMunicion;
+    private Integer idDetalleVentaArma;
+    private Date fechaVenta;
 }

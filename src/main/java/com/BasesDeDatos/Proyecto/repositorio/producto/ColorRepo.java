@@ -8,11 +8,13 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 import java.util.Optional;
 
-public interface ColorRepo extends JpaRepository<Color, Long> {
+public interface ColorRepo extends JpaRepository<Color, Integer> {
 
-    Optional<Color> findById(Long id);
+    Optional<Color> findById(Integer id);
 
     @Query(value = "SELECT * from color where nombre=:nombre", nativeQuery = true)
     List<Color> buscarNombre(@Param("nombre") String nombre);
 
+
+    Optional<Color> findByNombre(String nombre);
 }

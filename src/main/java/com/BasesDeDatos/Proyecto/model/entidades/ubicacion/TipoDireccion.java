@@ -1,5 +1,6 @@
 package com.BasesDeDatos.Proyecto.model.entidades.ubicacion;
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,8 +9,13 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class TipoDireccion {
-    private Long idTipoDeDireccion ;
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "tipo_direccion_seq")
+    @SequenceGenerator(name = "tipo_direccion_seq", sequenceName = "TIPO_DIRECCION_SEQ", allocationSize = 1)
+    private Integer idTipoDeDireccion;
+
     private String descripcion ;
 }
 
