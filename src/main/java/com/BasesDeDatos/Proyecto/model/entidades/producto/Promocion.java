@@ -18,10 +18,10 @@ public class Promocion {
 
     private Integer idArma;
     private Integer idMunicion;
-    private String tipoPromocion ;
-    private String descripcion ;
-    private Integer cantidadMinima ;
     private Double descuento ;
     private Date fechaInicio ;
     private Date fechaFin ;
+    private Integer cantidadMinima ;
+    private String descripcion ;
+    private String tipoPromocion ;
 }

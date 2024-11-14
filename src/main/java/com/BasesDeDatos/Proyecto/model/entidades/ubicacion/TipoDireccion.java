@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "tipo_de_direccion")
 public class TipoDireccion {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "tipo_direccion_seq")

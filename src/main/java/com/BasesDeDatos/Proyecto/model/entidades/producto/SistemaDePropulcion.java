@@ -9,11 +9,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class SistemaDePropulsion {
+@Table(name = "sistema_de_propulcion")
+public class SistemaDePropulcion {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sistema_propulsion_seq")
-    @SequenceGenerator(name = "sistema_propulsion_seq", sequenceName = "SISTEMA_PROPULSION_SEQ", allocationSize = 1)
-    private Integer idSistemaDePropulsion;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sistema_de_propulcion_seq")
+    @SequenceGenerator(name = "sistema_de_propulcion_seq", sequenceName = "SISTEMA_DE_PROPULCION_SEQ", allocationSize = 1)
+    private Integer idSistemaDePropulcion;
 
     private String tipoDeSistema ;
     private String precision ;
