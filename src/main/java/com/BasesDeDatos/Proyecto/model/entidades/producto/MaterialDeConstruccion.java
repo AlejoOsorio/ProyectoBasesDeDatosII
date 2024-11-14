@@ -11,11 +11,11 @@ import lombok.NoArgsConstructor;
 @Entity
 public class MaterialDeConstruccion {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "material_construccion_seq")
-    @SequenceGenerator(name = "material_construccion_seq", sequenceName = "MATERIAL_CONSTRUCCION_SEQ", allocationSize = 1)
-    private Integer idMaterialDeConstruccion;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "materia_construccion_seq")
+    @SequenceGenerator(name = "materia_construccion_seq", sequenceName = "MATERIA_CONSTRUCCION_SEQ", allocationSize = 1)
+    private Integer idMateriaDeConstruccion;
 
     private String tipoDeMaterial;
-    private Double pesoTotal;
+    private Integer pesoTotal;
     private String resistencia;
 }
