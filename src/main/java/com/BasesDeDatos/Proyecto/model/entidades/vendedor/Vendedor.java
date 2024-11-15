@@ -21,5 +21,5 @@ public class Vendedor {
     private String nombre ;
     private String apellido ;
     private String email ;
-    private Number telefono ;
+    private Integer telefono ;
 }

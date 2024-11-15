@@ -13,7 +13,7 @@ public class Cuenta {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "cuenta_seq")
     @SequenceGenerator(name = "cuenta_seq", sequenceName = "CUENTA_SEQ", allocationSize = 1)
-    private Integer idCuenta;
+    private Integer idUsuario;
 
     private String usuario;
     private String password;
