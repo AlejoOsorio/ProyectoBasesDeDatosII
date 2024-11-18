@@ -17,5 +17,5 @@ public class Direccion {
     private Integer idTipoDeDireccion;
     private Integer idVendedor;
     private Integer idCiudad;
-    private String direccionCompleta; // Cambié el nombre para evitar confusiones con la palabra "direccion"
+    private String direccion; // Cambié el nombre para evitar confusiones con la palabra "direccion"
 }

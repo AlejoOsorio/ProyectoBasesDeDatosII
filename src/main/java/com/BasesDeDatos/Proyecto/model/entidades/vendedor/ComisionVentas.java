@@ -17,6 +17,6 @@ public class ComisionVentas {
     private Integer idComisionVentas;
 
 
-    private Double porcentajeComision;
+    private Integer porcentajeComision;
     private Integer nivelArbol;
 }

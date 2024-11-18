@@ -20,5 +20,5 @@ public class PagoComisiones {
     private Integer idVendedorRecibe;
     private Integer idVendedorPago;
     private Date fecha;
-    private Double valorComision;
+    private Integer valorComision;
 }

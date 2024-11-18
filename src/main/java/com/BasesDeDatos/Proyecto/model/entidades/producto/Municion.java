@@ -19,4 +19,6 @@ public class Municion {
     private String material;
     private String tamanio;
     private Double peso;
+    private Double precio;
+
 }

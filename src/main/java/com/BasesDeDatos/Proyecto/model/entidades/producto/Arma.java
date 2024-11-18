@@ -18,12 +18,13 @@ public class Arma {
     private Integer idModoDeDisparo;
     private Integer idMaterialDeConstruccion;
     private Integer idTipoDeArma;
-    private Integer idSistemaDePropulsion;
+    private Integer idSistemaDePropulcion;
     private Integer idDisenoEstampado;
     private String nombre;
     private String modelo;
     private Double capacidadDelCargador;
     private Double peso;
     private Double dimension;
-    private String presion;
+    private String precion;
+    private Double precio;
 }

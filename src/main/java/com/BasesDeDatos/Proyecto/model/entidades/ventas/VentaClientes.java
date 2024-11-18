@@ -19,4 +19,5 @@ public class VentaClientes {
     private Integer idDetalleVentaMunicion;
     private Integer idDetalleVentaArma;
     private Date fechaVenta;
+    private Integer idVendedor;
 }
