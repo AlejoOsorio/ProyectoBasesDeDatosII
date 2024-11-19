@@ -4,7 +4,7 @@ import com.BasesDeDatos.Proyecto.dto.vendedor.AfiliarVendedorDTO;
 import com.BasesDeDatos.Proyecto.model.entidades.vendedor.Vendedor;
 
 public interface VendedorServicio {
-    void afiliarVendedor(AfiliarVendedorDTO afiliarVendedorDTO) throws Exception;
-    void desafiliarVendedor(long idVendedor) throws Exception;
+    Integer obtenerGananciasMes(Integer idVendedor) ;
+    Integer obtenerGananciasVa(Integer idVendedor);
 
 }

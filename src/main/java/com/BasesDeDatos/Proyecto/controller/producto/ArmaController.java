@@ -22,7 +22,7 @@ public class ArmaController {
         return armaServicio.obtenerArmas();
     }
     @GetMapping("/buscar/arma_nombre")
-    public List<ArmaDTO> obtenerArmaNombre(@Validated @RequestBody String nombre) throws Exception{
+    public List<ArmaDTO> obtenerArmaNombre(@RequestBody String nombre) throws Exception{
         return armaServicio.buscarArma(nombre);
     }
 
