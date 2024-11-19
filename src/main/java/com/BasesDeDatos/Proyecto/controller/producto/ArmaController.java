@@ -3,6 +3,7 @@ package com.BasesDeDatos.Proyecto.controller.producto;
 import com.BasesDeDatos.Proyecto.dto.producto.ArmaDTO;
 import com.BasesDeDatos.Proyecto.servicios.interfaces.producto.ArmaServicio;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ArmaController {
 
+    @Autowired
     private ArmaServicio armaServicio;
 
     @GetMapping("/obtener/armas")
